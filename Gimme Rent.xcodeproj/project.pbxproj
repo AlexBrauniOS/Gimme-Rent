@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E586951436615679059CC59F /* Pods_Gimme_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5BAA99DDF70714DF944E5 /* Pods_Gimme_Rent.framework */; };
+		EB1E3E661EDFFB1400194085 /* AllRequestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E651EDFFB1400194085 /* AllRequestsTableViewController.swift */; };
+		EB1E3E681EDFFB7A00194085 /* AllRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E671EDFFB7A00194085 /* AllRequestsTableViewCell.swift */; };
+		EB1E3E6A1EE00D9E00194085 /* RequestInDetailsForOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E691EE00D9D00194085 /* RequestInDetailsForOwnerViewController.swift */; };
+		EB1E3E6C1EE0489200194085 /* MyRoomsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E6B1EE0489100194085 /* MyRoomsTableViewController.swift */; };
+		EB1E3E6E1EE048DA00194085 /* CurrentRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E6D1EE048DA00194085 /* CurrentRoomViewController.swift */; };
+		EB1E3E701EE0490800194085 /* AddNewRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E6F1EE0490800194085 /* AddNewRoomViewController.swift */; };
+		EB1E3E721EE0494C00194085 /* NewRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E711EE0494C00194085 /* NewRoom.swift */; };
+		EB1E3E741EE0499700194085 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E731EE0499700194085 /* RoomTableViewCell.swift */; };
+		EB2ED35F1EF1D00700541958 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2ED35E1EF1D00700541958 /* LoginStoryboard.storyboard */; };
+		EB2ED3611EF1D12E00541958 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2ED3601EF1D12E00541958 /* LoginViewController.swift */; };
+		EB2ED3631EF1D20500541958 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2ED3621EF1D20500541958 /* NetworkManager.swift */; };
+		EB78803E1ED310670049C9B8 /* AddRequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78803D1ED310670049C9B8 /* AddRequestTableViewController.swift */; };
+		EB7880401ED350270049C9B8 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB78803F1ED350270049C9B8 /* EditProfile.swift */; };
+		EB7880441ED369900049C9B8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7880431ED369900049C9B8 /* EditProfileViewController.swift */; };
+		EBBC23901ECCC255007936E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC238F1ECCC255007936E0 /* AppDelegate.swift */; };
+		EBBC23951ECCC255007936E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBC23931ECCC255007936E0 /* Main.storyboard */; };
+		EBBC23971ECCC255007936E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBBC23961ECCC255007936E0 /* Assets.xcassets */; };
+		EBBC239A1ECCC255007936E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBBC23981ECCC255007936E0 /* LaunchScreen.storyboard */; };
+		EBBC23A21ECDF118007936E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23A11ECDF118007936E0 /* ProfileViewController.swift */; };
+		EBBC23A61ECDF2A1007936E0 /* RequestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23A51ECDF2A1007936E0 /* RequestsTableViewController.swift */; };
+		EBBC23AA1ECDF4DD007936E0 /* NewRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23A91ECDF4DD007936E0 /* NewRequest.swift */; };
+		EBBC23AC1ECE1E7F007936E0 /* AddOfferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23AB1ECE1E7E007936E0 /* AddOfferViewController.swift */; };
+		EBBC23AE1ECE205C007936E0 /* NewOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23AD1ECE205C007936E0 /* NewOffer.swift */; };
+		EBBC23B31ECE2FE9007936E0 /* MyOffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23B21ECE2FE9007936E0 /* MyOffersTableViewController.swift */; };
+		EBBC23B51ECE4989007936E0 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23B41ECE4989007936E0 /* RequestTableViewCell.swift */; };
+		EBBC23B91ECE4EDC007936E0 /* MyOffersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBC23B81ECE4EDC007936E0 /* MyOffersTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6246DAB2EEFA13BB225D3864 /* Pods-Gimme Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gimme Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gimme Rent/Pods-Gimme Rent.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC5BAA99DDF70714DF944E5 /* Pods_Gimme_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gimme_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1E3E651EDFFB1400194085 /* AllRequestsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsTableViewController.swift; sourceTree = "<group>"; };
+		EB1E3E671EDFFB7A00194085 /* AllRequestsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsTableViewCell.swift; sourceTree = "<group>"; };
+		EB1E3E691EE00D9D00194085 /* RequestInDetailsForOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestInDetailsForOwnerViewController.swift; sourceTree = "<group>"; };
+		EB1E3E6B1EE0489100194085 /* MyRoomsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRoomsTableViewController.swift; sourceTree = "<group>"; };
+		EB1E3E6D1EE048DA00194085 /* CurrentRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentRoomViewController.swift; sourceTree = "<group>"; };
+		EB1E3E6F1EE0490800194085 /* AddNewRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewRoomViewController.swift; sourceTree = "<group>"; };
+		EB1E3E711EE0494C00194085 /* NewRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRoom.swift; sourceTree = "<group>"; };
+		EB1E3E731EE0499700194085 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		EB2ED35E1EF1D00700541958 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		EB2ED3601EF1D12E00541958 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB2ED3621EF1D20500541958 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB78803D1ED310670049C9B8 /* AddRequestTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRequestTableViewController.swift; sourceTree = "<group>"; };
+		EB78803F1ED350270049C9B8 /* EditProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
+		EB7880431ED369900049C9B8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		EBBC238C1ECCC255007936E0 /* Gimme Rent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gimme Rent.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBC238F1ECCC255007936E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBBC23941ECCC255007936E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBBC23961ECCC255007936E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBBC23991ECCC255007936E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBBC239B1ECCC255007936E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBBC23A11ECDF118007936E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EBBC23A51ECDF2A1007936E0 /* RequestsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestsTableViewController.swift; sourceTree = "<group>"; };
+		EBBC23A91ECDF4DD007936E0 /* NewRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRequest.swift; sourceTree = "<group>"; };
+		EBBC23AB1ECE1E7E007936E0 /* AddOfferViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOfferViewController.swift; sourceTree = "<group>"; };
+		EBBC23AD1ECE205C007936E0 /* NewOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewOffer.swift; sourceTree = "<group>"; };
+		EBBC23B21ECE2FE9007936E0 /* MyOffersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewController.swift; sourceTree = "<group>"; };
+		EBBC23B41ECE4989007936E0 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		EBBC23B81ECE4EDC007936E0 /* MyOffersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOffersTableViewCell.swift; sourceTree = "<group>"; };
+		FC9092F27AF5319FD698651A /* Pods-Gimme Rent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gimme Rent.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gimme Rent/Pods-Gimme Rent.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBBC23891ECCC255007936E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E586951436615679059CC59F /* Pods_Gimme_Rent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DE61BA0AA8C079B8F0C43A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FC5BAA99DDF70714DF944E5 /* Pods_Gimme_Rent.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D708EE5583B004C2229EC744 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6246DAB2EEFA13BB225D3864 /* Pods-Gimme Rent.debug.xcconfig */,
+				FC9092F27AF5319FD698651A /* Pods-Gimme Rent.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBBC23831ECCC255007936E0 = {
+			isa = PBXGroup;
+			children = (
+				EBBC238E1ECCC255007936E0 /* Gimme Rent */,
+				EBBC238D1ECCC255007936E0 /* Products */,
+				D708EE5583B004C2229EC744 /* Pods */,
+				4DE61BA0AA8C079B8F0C43A2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBBC238D1ECCC255007936E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBBC238C1ECCC255007936E0 /* Gimme Rent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBBC238E1ECCC255007936E0 /* Gimme Rent */ = {
+			isa = PBXGroup;
+			children = (
+				EBBC23931ECCC255007936E0 /* Main.storyboard */,
+				EB2ED35E1EF1D00700541958 /* LoginStoryboard.storyboard */,
+				EBBC238F1ECCC255007936E0 /* AppDelegate.swift */,
+				EB2ED3621EF1D20500541958 /* NetworkManager.swift */,
+				EBBC23B01ECE2331007936E0 /* Controller */,
+				EBBC23B11ECE233E007936E0 /* Cell */,
+				EBBC23AF1ECE2320007936E0 /* Model */,
+				EBBC23961ECCC255007936E0 /* Assets.xcassets */,
+				EBBC23981ECCC255007936E0 /* LaunchScreen.storyboard */,
+				EBBC239B1ECCC255007936E0 /* Info.plist */,
+			);
+			path = "Gimme Rent";
+			sourceTree = "<group>";
+		};
+		EBBC23AF1ECE2320007936E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBBC23A91ECDF4DD007936E0 /* NewRequest.swift */,
+				EBBC23AD1ECE205C007936E0 /* NewOffer.swift */,
+				EB78803F1ED350270049C9B8 /* EditProfile.swift */,
+				EB1E3E711EE0494C00194085 /* NewRoom.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		EBBC23B01ECE2331007936E0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB2ED3601EF1D12E00541958 /* LoginViewController.swift */,
+				EB1E3E651EDFFB1400194085 /* AllRequestsTableViewController.swift */,
+				EB1E3E691EE00D9D00194085 /* RequestInDetailsForOwnerViewController.swift */,
+				EB1E3E6B1EE0489100194085 /* MyRoomsTableViewController.swift */,
+				EB1E3E6D1EE048DA00194085 /* CurrentRoomViewController.swift */,
+				EB1E3E6F1EE0490800194085 /* AddNewRoomViewController.swift */,
+				EBBC23A51ECDF2A1007936E0 /* RequestsTableViewController.swift */,
+				EB78803D1ED310670049C9B8 /* AddRequestTableViewController.swift */,
+				EBBC23A11ECDF118007936E0 /* ProfileViewController.swift */,
+				EB7880431ED369900049C9B8 /* EditProfileViewController.swift */,
+				EBBC23AB1ECE1E7E007936E0 /* AddOfferViewController.swift */,
+				EBBC23B21ECE2FE9007936E0 /* MyOffersTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EBBC23B11ECE233E007936E0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EBBC23B81ECE4EDC007936E0 /* MyOffersTableViewCell.swift */,
+				EBBC23B41ECE4989007936E0 /* RequestTableViewCell.swift */,
+				EB1E3E671EDFFB7A00194085 /* AllRequestsTableViewCell.swift */,
+				EB1E3E731EE0499700194085 /* RoomTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBBC238B1ECCC255007936E0 /* Gimme Rent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBBC239E1ECCC255007936E0 /* Build configuration list for PBXNativeTarget "Gimme Rent" */;
+			buildPhases = (
+				0DD48B5BF28F5C6015EBE04E /* [CP] Check Pods Manifest.lock */,
+				EBBC23881ECCC255007936E0 /* Sources */,
+				EBBC23891ECCC255007936E0 /* Frameworks */,
+				EBBC238A1ECCC255007936E0 /* Resources */,
+				52EF908138C98033B302ED1F /* [CP] Embed Pods Frameworks */,
+				8D153905ABAB07CF779E0845 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gimme Rent";
+			productName = "Gimme Rent";
+			productReference = EBBC238C1ECCC255007936E0 /* Gimme Rent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBBC23841ECCC255007936E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alex Braun";
+				TargetAttributes = {
+					EBBC238B1ECCC255007936E0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9QQKN39F5V;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EBBC23871ECCC255007936E0 /* Build configuration list for PBXProject "Gimme Rent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBBC23831ECCC255007936E0;
+			productRefGroup = EBBC238D1ECCC255007936E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBBC238B1ECCC255007936E0 /* Gimme Rent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBBC238A1ECCC255007936E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBBC239A1ECCC255007936E0 /* LaunchScreen.storyboard in Resources */,
+				EBBC23971ECCC255007936E0 /* Assets.xcassets in Resources */,
+				EBBC23951ECCC255007936E0 /* Main.storyboard in Resources */,
+				EB2ED35F1EF1D00700541958 /* LoginStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DD48B5BF28F5C6015EBE04E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		52EF908138C98033B302ED1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gimme Rent/Pods-Gimme Rent-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D153905ABAB07CF779E0845 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gimme Rent/Pods-Gimme Rent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBBC23881ECCC255007936E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2ED3611EF1D12E00541958 /* LoginViewController.swift in Sources */,
+				EB1E3E6E1EE048DA00194085 /* CurrentRoomViewController.swift in Sources */,
+				EB1E3E6C1EE0489200194085 /* MyRoomsTableViewController.swift in Sources */,
+				EBBC23AA1ECDF4DD007936E0 /* NewRequest.swift in Sources */,
+				EB2ED3631EF1D20500541958 /* NetworkManager.swift in Sources */,
+				EB78803E1ED310670049C9B8 /* AddRequestTableViewController.swift in Sources */,
+				EB7880401ED350270049C9B8 /* EditProfile.swift in Sources */,
+				EBBC23B51ECE4989007936E0 /* RequestTableViewCell.swift in Sources */,
+				EB1E3E741EE0499700194085 /* RoomTableViewCell.swift in Sources */,
+				EBBC23B31ECE2FE9007936E0 /* MyOffersTableViewController.swift in Sources */,
+				EBBC23A61ECDF2A1007936E0 /* RequestsTableViewController.swift in Sources */,
+				EB1E3E701EE0490800194085 /* AddNewRoomViewController.swift in Sources */,
+				EBBC23B91ECE4EDC007936E0 /* MyOffersTableViewCell.swift in Sources */,
+				EB1E3E721EE0494C00194085 /* NewRoom.swift in Sources */,
+				EBBC23AC1ECE1E7F007936E0 /* AddOfferViewController.swift in Sources */,
+				EB1E3E6A1EE00D9E00194085 /* RequestInDetailsForOwnerViewController.swift in Sources */,
+				EB7880441ED369900049C9B8 /* EditProfileViewController.swift in Sources */,
+				EB1E3E681EDFFB7A00194085 /* AllRequestsTableViewCell.swift in Sources */,
+				EBBC23A21ECDF118007936E0 /* ProfileViewController.swift in Sources */,
+				EB1E3E661EDFFB1400194085 /* AllRequestsTableViewController.swift in Sources */,
+				EBBC23AE1ECE205C007936E0 /* NewOffer.swift in Sources */,
+				EBBC23901ECCC255007936E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EBBC23931ECCC255007936E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBC23941ECCC255007936E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBBC23981ECCC255007936E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBBC23991ECCC255007936E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBBC239C1ECCC255007936E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBBC239D1ECCC255007936E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBBC239F1ECCC255007936E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6246DAB2EEFA13BB225D3864 /* Pods-Gimme Rent.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9QQKN39F5V;
+				INFOPLIST_FILE = "Gimme Rent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lubarets.Gimme-Rent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EBBC23A01ECCC255007936E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC9092F27AF5319FD698651A /* Pods-Gimme Rent.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9QQKN39F5V;
+				INFOPLIST_FILE = "Gimme Rent/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lubarets.Gimme-Rent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBBC23871ECCC255007936E0 /* Build configuration list for PBXProject "Gimme Rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBC239C1ECCC255007936E0 /* Debug */,
+				EBBC239D1ECCC255007936E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBBC239E1ECCC255007936E0 /* Build configuration list for PBXNativeTarget "Gimme Rent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBBC239F1ECCC255007936E0 /* Debug */,
+				EBBC23A01ECCC255007936E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBBC23841ECCC255007936E0 /* Project object */;
+}
