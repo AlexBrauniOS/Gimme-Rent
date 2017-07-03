@@ -37,11 +37,11 @@ class AddNewRoomViewController: UIViewController {
     }
     
     @IBAction func AddRoomsAction(_ sender: UIStepper) {
-        AddRooms.text = String(sender.value)
+        AddRooms.text = String(Int(sender.value))
     }
     
     @IBAction func AddSeatsAction(_ sender: UIStepper) {
-        AddSeats.text = String(sender.value)
+        AddSeats.text = String(Int(sender.value))
     }
     
     @IBAction func AddPriceAction(_ sender: UITextField) {
@@ -63,7 +63,7 @@ class AddNewRoomViewController: UIViewController {
         )
         
         delegateNewRoom?.saveNewRoom(newRoom)
-        _ = self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
         
     }
     

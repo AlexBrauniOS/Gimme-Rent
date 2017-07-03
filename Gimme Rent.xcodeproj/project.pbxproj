@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2FDC1501F0A9AAF00AA2507 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDC14F1F0A9AAF00AA2507 /* SignupViewController.swift */; };
 		E586951436615679059CC59F /* Pods_Gimme_Rent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC5BAA99DDF70714DF944E5 /* Pods_Gimme_Rent.framework */; };
 		EB1E3E661EDFFB1400194085 /* AllRequestsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E651EDFFB1400194085 /* AllRequestsTableViewController.swift */; };
 		EB1E3E681EDFFB7A00194085 /* AllRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1E3E671EDFFB7A00194085 /* AllRequestsTableViewCell.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		6246DAB2EEFA13BB225D3864 /* Pods-Gimme Rent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gimme Rent.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gimme Rent/Pods-Gimme Rent.debug.xcconfig"; sourceTree = "<group>"; };
 		8FC5BAA99DDF70714DF944E5 /* Pods_Gimme_Rent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gimme_Rent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2FDC14F1F0A9AAF00AA2507 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		EB1E3E651EDFFB1400194085 /* AllRequestsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsTableViewController.swift; sourceTree = "<group>"; };
 		EB1E3E671EDFFB7A00194085 /* AllRequestsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsTableViewCell.swift; sourceTree = "<group>"; };
 		EB1E3E691EE00D9D00194085 /* RequestInDetailsForOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestInDetailsForOwnerViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		EBBC23B01ECE2331007936E0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D2FDC14F1F0A9AAF00AA2507 /* SignupViewController.swift */,
 				EB2ED3601EF1D12E00541958 /* LoginViewController.swift */,
 				EB1E3E651EDFFB1400194085 /* AllRequestsTableViewController.swift */,
 				EB1E3E691EE00D9D00194085 /* RequestInDetailsForOwnerViewController.swift */,
@@ -321,6 +324,7 @@
 				EBBC23A21ECDF118007936E0 /* ProfileViewController.swift in Sources */,
 				EB1E3E661EDFFB1400194085 /* AllRequestsTableViewController.swift in Sources */,
 				EBBC23AE1ECE205C007936E0 /* NewOffer.swift in Sources */,
+				D2FDC1501F0A9AAF00AA2507 /* SignupViewController.swift in Sources */,
 				EBBC23901ECCC255007936E0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
