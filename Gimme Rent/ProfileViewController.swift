@@ -53,11 +53,21 @@ class ProfileViewController: UIViewController
         }
     }
     
-    
 //    func saveProfile(_ request: EditProfile) {
 ////        editProfile.append(request)
 //        
 //        
 //    }
+    
+    @IBAction func LogOutButton(_ sender: UIBarButtonItem) {
+        PFUser.logOut()
+        if PFUser.current() == nil {
+            let loginSB = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+            let loginVC = loginSB.instantiateViewController(withIdentifier: "LoginViewController")
+            self.present(loginVC, animated: true)
+        } else {
+            print("error with logout")
+        }
+    }
     
 }

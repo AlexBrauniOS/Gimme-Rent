@@ -22,14 +22,10 @@ class RequestsTableViewController: UITableViewController, SaveDelegat {
     
     func loginCheck(user: PFUser?) {
         if PFUser.current() == nil {
-            var loginSB = UIStoryboard()
-            loginSB = UIStoryboard(name: "LoginStoryboard", bundle: nil)
+            let loginSB = UIStoryboard(name: "LoginStoryboard", bundle: nil)
             
             let loginVC = loginSB.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            self.navigationController?.pushViewController(loginVC, animated: true)
-        } else {
-            let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "RequestsTableViewController") as! RequestsTableViewController
-            self.navigationController?.pushViewController(mainVC, animated: true)
+            self.present(loginVC, animated: true)
         }
     }
     

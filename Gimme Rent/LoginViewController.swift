@@ -26,13 +26,13 @@ class LoginViewController: UIViewController {
         guard let password = passwordTextField.text else {return}
         
         NetworkManager.login(withLogin: login, andPassword: password) { (user, error) in
-            if error == nil {
-                let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "RequestsTableViewController") as! RequestsTableViewController
-                self.navigationController?.pushViewController(mainVC, animated: true)
+            if (PFUser.current() != nil) {
+                let mainSB = UIStoryboard(name: "Main", bundle: nil)
+                let mainVC = mainSB.instantiateViewController(withIdentifier: "TabBarController")
+                self.present(mainVC, animated: true, completion: nil)
             } else {
-                print(error?.localizedDescription)
+                print(error!.localizedDescription)
             }
         }
-        
     }
 }

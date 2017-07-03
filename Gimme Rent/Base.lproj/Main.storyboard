@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zgo-CC-bg2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zgo-CC-bg2">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -774,11 +774,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="O1A-tD-fmg">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="ROo-mf-O86">
-                            <connections>
-                                <segue destination="7LH-ry-8B3" kind="show" identifier="EditProfileViewController" id="xKi-uy-v8v"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="ROo-mf-O86">
+                                <connections>
+                                    <segue destination="7LH-ry-8B3" kind="show" identifier="EditProfileViewController" id="xKi-uy-v8v"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Log out" id="j0u-8r-k3i">
+                                <connections>
+                                    <action selector="LogOutButton:" destination="U8w-ED-ZfS" id="TnM-Q2-P2K"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="ProfileAge" destination="MEM-Nt-gKY" id="MAe-94-avg"/>
@@ -1201,7 +1208,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yEb-LQ-2Rm">
             <objects>
-                <tabBarController id="Zgo-CC-bg2" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" id="Zgo-CC-bg2" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="mHL-tG-oya">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
