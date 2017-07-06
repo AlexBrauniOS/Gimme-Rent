@@ -63,6 +63,7 @@ class AddNewRoomViewController: UIViewController {
         )
         
         delegateNewRoom?.saveNewRoom(newRoom)
+    
         self.navigationController?.popViewController(animated: true)
         
     }

@@ -68,6 +68,8 @@ class RequestsTableViewController: UITableViewController, SaveDelegat {
         cell.DateFrom.text = request.periodFrom
         cell.DateTo.text = request.periodTo
         
+        cell.layer.cornerRadius = 20
+        
         return cell
     }
     

@@ -41,8 +41,14 @@ class ProfileViewController: UIViewController
         ProfileEmail.text = valueOfEmail
         ProfileDescription.text = valueOfDescription
         
+        setup()
     }
 
+    func setup() {
+        ProfileImage.layer.cornerRadius = ProfileImage.frame.height/2
+        ProfileImage.layer.masksToBounds = true
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "EditProfileViewController" {

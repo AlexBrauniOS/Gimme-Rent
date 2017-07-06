@@ -28,6 +28,12 @@ class EditProfileViewController: UIViewController, UINavigationControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setup()
+    }
+    
+    func setup() {
+        UserPhotoImage.layer.cornerRadius = UserPhotoImage.frame.height/2
+        UserPhotoImage.layer.masksToBounds = true
     }
     
     @IBAction func SaveProfileButton(_ sender: UIBarButtonItem) {

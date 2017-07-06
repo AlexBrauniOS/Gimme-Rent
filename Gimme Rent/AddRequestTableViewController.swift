@@ -95,7 +95,7 @@ class AddRequestTableViewController: UITableViewController, UINavigationControll
     }
     
     @IBAction func CostSlider(_ sender: UISlider) {
-        CostLabel.text = String(Int(sender.value))
+        CostLabel.text = String(Int(sender.value)*20)
     }
     
     

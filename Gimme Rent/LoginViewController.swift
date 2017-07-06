@@ -14,13 +14,18 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setup()
     }
-
+    
+    func setup() {
+        loginButton.layer.cornerRadius = loginButton.frame.height/2
+    }
+    
     @IBAction func loginAction(_ sender: UIButton) {
         guard let login = loginTextField.text else {return}
         guard let password = passwordTextField.text else {return}
